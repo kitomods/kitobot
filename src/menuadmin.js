@@ -1,5 +1,5 @@
 const menuadmin = (prefix, pushname) => {
- return `todos os adms tem q mandar foto da raba pro marcos
+ return `𖡜ꦽ̸ོ˚￫𝑲𝐈𝐓𝐎𖥨ํ∘̥⃟⸽⃟🌹domina
  _obs para o bot executar esses comandos e nescessario dar adm para o bot_
  
  ◪ *COMANDO DOS ADMINS*
