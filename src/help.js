@@ -1,10 +1,10 @@
 const help = (prefix) => {
 	return `
-「 *Kintin bot* 」
+「 *Kito bot* 」
 
 ◪ *informações*
   ❏ Prefix: 「  ${prefix}  」
-  ❏ Criador : Marcos
+  ❏ Criador : 𖡜ꦽ̸ོ˚￫𝑲𝐈𝐓𝐎𖥨ํ∘̥⃟⸽⃟🌹
 
 ◪ *SOBRE*
   │
@@ -88,13 +88,6 @@ const help = (prefix) => {
   │
   ├─ ❏ ${prefix}lirik
   └─ ❏ ${prefix}chord
-◪ *ISLAM*
-  │
-  └─ ❏ ${prefix}quran
-◪ *STALK*
-  │
-  ├─ ❏ ${prefix}tiktokstalk
-  └─ ❏ ${prefix}igstalk
 ◪ *WIBU*
   │
   ├─ ❏ ${prefix}neonime
