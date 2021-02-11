@@ -43,7 +43,6 @@ const help = (prefix) => {
   ├─ ❏ ${prefix}metalictglow
   ├─ ❏ ${prefix}8bit
   ├─ ❏ ${prefix}ttp
-  ├─ ❏ ${prefix}herrypotter
   ├─ ❏ ${prefix}pubglogo
   └─ ❏ ${prefix}quotemaker
 ◪ *MEDIA*
@@ -94,7 +93,6 @@ const help = (prefix) => {
   ├─ ❏ ${prefix}randomanime
   ├─ ❏ ${prefix}husbu
   ├─ ❏ ${prefix}husbu2
-  ├─ ❏ ${prefix}wait
   └─ ❏ ${prefix}nekonime
 ◪ *DIVERSÃO*
   │
