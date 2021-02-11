@@ -8,14 +8,11 @@ const help = (prefix) => {
 
 ◪ *SOBRE*
   │
-  ├─ ❏ ${prefix}info
-  ├─ ❏ ${prefix}blocklist
-  ├─ ❏ ${prefix}chatlist
   ├─ ❏ ${prefix}ping
   └─ ❏ ${prefix}bugreport
 ◪ *FAZER*
   │
-  ├─ ❏ ${prefix}sticker
+  ├─ ❏ ${prefix}fig
   ├─ ❏ ${prefix}stickergif
   ├─ ❏ ${prefix}toimg
   ├─ ❏ ${prefix}tomp3
@@ -23,7 +20,6 @@ const help = (prefix) => {
   ├─ ❏ ${prefix}marvellogo
   ├─ ❏ ${prefix}snowwrite
   ├─ ❏ ${prefix}3dtext
-  ├─ ❏ ${prefix}ninjalogo
   ├─ ❏ ${prefix}water
   ├─ ❏ ${prefix}firetext
   ├─ ❏ ${prefix}logowolf
@@ -52,23 +48,17 @@ const help = (prefix) => {
   └─ ❏ ${prefix}quotemaker
 ◪ *MEDIA*
   │
-  ├─ ❏ ${prefix}trendtwit
-  ├─ ❏ ${prefix}randomkpop
   └─ ❏ ${prefix}ytsearch
 ◪ *EDUCATION*
   │
   ├─ ❏ ${prefix}wiki
   ├─ ❏ ${prefix}wikien
-  ├─ ❏ ${prefix}nulis
   ├─ ❏ ${prefix}quotes
-  ├─ ❏ ${prefix}quotes2
-  └─ ❏ ${prefix}artinama
+  └─ ❏ ${prefix}quotes2
 ◪ *KERANG AJAIB*
   │
-  ├─ ❏ ${prefix}apakah
   ├─ ❏ ${prefix}kapankah
   ├─ ❏ ${prefix}rate
-  └─ ❏ ${prefix}bisakah
 ◪ *DOWNLOADER*
   │
   ├─ ❏ ${prefix}images
@@ -119,16 +109,13 @@ const help = (prefix) => {
   └─ ❏ ${prefix}simi
 ◪ *INFORMAÇÃO*
   │
-  ├─ ❏ ${prefix}bahasa
-  ├─ ❏ ${prefix}kodenegara
-  ├─ ❏ ${prefix}kbbi
-  ├─ ❏ ${prefix}fakta
   ├─ ❏ ${prefix}infocuaca
   ├─ ❏ ${prefix}infogempa
   ├─ ❏ ${prefix}jadwaltvnow
   └─ ❏ ${prefix}covid
 ◪ *DONO*
   │
+  ├─❏  ${prefix}kitomenu
   ├─ ❏ ${prefix}setprefix
   ├─ ❏ ${prefix}block
   ├─ ❏ ${prefix}bc
