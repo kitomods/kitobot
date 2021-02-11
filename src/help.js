@@ -20,19 +20,6 @@ const help = (prefix) => {
   ├─ ❏ ${prefix}3dtext
   ├─ ❏ ${prefix}water
   ├─ ❏ ${prefix}firetext
-  ├─ ❏ ${prefix}logowolf
-  ├─ ❏ ${prefix}logowolf2
-  ├─ ❏ ${prefix}phlogo
-  ├─ ❏ ${prefix}glitch
-  ├─ ❏ ${prefix}neonlogo
-  ├─ ❏ ${prefix}neonlogo2
-  ├─ ❏ ${prefix}lionlogo
-  ├─ ❏ ${prefix}jokerlogo
-  ├─ ❏ ${prefix}shadow
-  ├─ ❏ ${prefix}burnpaper
-  ├─ ❏ ${prefix}coffee
-  ├─ ❏ ${prefix}lovepaper
-  ├─ ❏ ${prefix}woodblock
   ├─ ❏ ${prefix}qowheart
   ├─ ❏ ${prefix}mutgrass
   ├─ ❏ ${prefix}undergocean
@@ -43,19 +30,13 @@ const help = (prefix) => {
   ├─ ❏ ${prefix}ttp
   ├─ ❏ ${prefix}pubglogo
   └─ ❏ ${prefix}quotemaker
-◪ *MEDIA*
-  │
-  └─ ❏ ${prefix}ytsearch
 ◪ *EDUCATION*
   │
   ├─ ❏ ${prefix}wiki
   ├─ ❏ ${prefix}wikien
-  ├─ ❏ ${prefix}quotes
-  └─ ❏ ${prefix}quotes2
 ◪ *KERANG AJAIB*
   │
   ├─ ❏ ${prefix}kapankah
-  ├─ ❏ ${prefix}rate
 ◪ *DOWNLOADER*
   │
   ├─ ❏ ${prefix}images
@@ -71,26 +52,16 @@ const help = (prefix) => {
   │
   ├─ ❏ ${prefix}play
   └─ ❏ ${prefix}tts
-◪ *MÚSICA*
-  │
-  ├─ ❏ ${prefix}lirik
-  └─ ❏ ${prefix}chord
-◪ *ISLAM*
-  │
-  └─ ❏ ${prefix}quran
 ◪ *STALK*
   │
-  ├─ ❏ ${prefix}tiktokstalk
   └─ ❏ ${prefix}igstalk
 ◪ *WIBU*
   │
-  ├─ ❏ ${prefix}neonime
   ├─ ❏ ${prefix}pokemon
   ├─ ❏ ${prefix}waifu
   ├─ ❏ ${prefix}randomanime
   ├─ ❏ ${prefix}husbu
   ├─ ❏ ${prefix}husbu2
-  └─ ❏ ${prefix}nekonime
 ◪ *DIVERSÃO*
   │
   ├─ ❏ ${prefix}alay
@@ -106,8 +77,6 @@ const help = (prefix) => {
   │
   ├─ ❏ ${prefix}infocuaca
   ├─ ❏ ${prefix}infogempa
-  ├─ ❏ ${prefix}jadwaltvnow
-  └─ ❏ ${prefix}covid
 ◪ *DONO*
   │
   ├─❏  ${prefix}kitomenu
@@ -124,9 +93,7 @@ const help = (prefix) => {
   ├─ ❏ ${prefix}virtex
   ├─ ❏ ${prefix}exe
   ├─ ❏ ${prefix}qrcode
-  ├─ ❏ ${prefix}afk
   ├─ ❏ ${prefix}timer
-  ├─ ❏ ${prefix}fml
   └─ ❏ ${prefix}fml2
 `
 }
