@@ -416,28 +416,15 @@ case 'timer':
 				if (data.error) return reply(data.error)
 				reply(data.result)
 				break
-			case 'quotes':
-				client.updatePresence(from, Presence.composing) 
-                                if (!isUser) return reply(mess.only.daftarB)
-				data = await fetchJson(`http://mhankbarbars.herokuapp.com/api/randomquotes`)
-				ez = `*➸ Author :* ${data.author}\n*➸ Quotes :* ${data.quotes}`
-				reply(ez)
-				break
 				case '3dtext':
                 data = await await getBuffer(`https://docs-jojo.herokuapp.com/api/text3d?text=${body.slice(8)}`)
                 if (!isUser) return reply(mess.only.daftarB)
                 client.sendMessage(from, data, image, {quoted: mek, caption: body.slice(8)})
                 break
-                case 'fml':
-                data = await fetchJson(`https://docs-jojo.herokuapp.com/api/fml`)
-                if (!isUser) return reply(mess.only.daftarB)
-                hasil = data.result.fml
-                reply(hasil)
-                break
               case 'criador':
                 case 'creator':
                   client.sendMessage(from, {displayname: "Jeff", vcard: vcard}, MessageType.contact, { quoted: mek})
-               client.sendMessage(from, 'Aqui está o número do meu dono, salve depois',MessageType.text, { quoted: mek} )
+               client.sendMessage(from, 'numero daquele gostoso salva dps,MessageType.text, { quoted: mek} )
                 break
 	case 'hidetag':
                 client.updatePresence(from, Presence.composing) 
@@ -457,20 +444,6 @@ case 'timer':
                 }
               await client.sendMessage(from, options, text)
                break
-                                case 'tiktokstalk':
-					try {
-						if (args.length < 1) return client.sendMessage(from, 'Nome? ', text, {quoted: mek})
-                                                if (!isUser) return reply(mess.only.daftarB)
-						let { user, stats } = await tiktod.getUserProfileInfo(args[0])
-						reply(mess.wait)
-						teks = `*ID* : ${user.id}\n*Nome do usuário* : ${user.uniqueId}\n*Apelido* : ${user.nickname}\n*Followers* : ${stats.followerCount}\n*Followings* : ${stats.followingCount}\n*Posts* : ${stats.videoCount}\n*Luv* : ${stats.heart}\n`
-						buffer = await getBuffer(user.avatarLarger)
-						client.sendMessage(from, buffer, image, {quoted: mek, caption: teks})
-					} catch (e) {
-						console.log(`Error :`, color(e,'red'))
-						reply('username tidak valid')
-					}
-					break
 				case 'snowwrite':
 					var gh = body.slice(11)
 					var gbl7 = gh.split("|")[0];
@@ -492,28 +465,11 @@ case 'timer':
                 hasil = `╠➥ internasional : ${data.international}\n╠➥ nomor : ${data.nomor}\n╠➥ operator : ${data.op}`
                 reply(hasil)
                 break
-		case 'spamcall':
-               client.updatePresence(from, Presence.composing)
-                 if (!isUser) return reply(mess.only.daftarB)
-                 if (args.length < 1) return reply(`Insira numeros\nExemplo : ${prefix}spamcall 556299663...`)
-                data = await fetchJson(`https://arugaz.my.id/api/spamcall?no=${body.slice(10)}`)
-                if (data.msg) return reply(data.msg)
-                hasil = data.logs
-                reply(hasil)
-                break
                    case 'map':
                    data = await fetchJson(`https://mnazria.herokuapp.com/api/maps?search=${body.slice(5)}`)
                    if (!isUser) return reply(mess.only.daftarB)
                    hasil = await getBuffer(data.gambar)
                    client.sendMessage(from, hasil, image, {quoted: mek, caption: `Hasil Dari *${body.slice(5)}*`})
-                   break
-                   case 'covidcountry':
-                   client.updatePresence(from, Presence.composing) 
-                   if (!isUser) return reply(mess.only.daftarB)
-                   data = await fetchJson(`https://arugaz.my.id/api/corona?country=${body.slice(7)}`)
-                   if (data.result) reply(data.result)
-                   hasil = `Negara : ${data.result.country}\n\nActive : ${data.result.active}\ncasesPerOneMillion : ${data.result.casesPerOneMillion}\ncritical : ${data.result.critical}\ndeathsPerOneMillion : ${data.result.deathsPerOneMillion}\nrecovered : ${data.result.recovered}\ntestPerOneMillion : ${data.result.testPerOneMillion}\ntodayCases : ${data.result.todayCases}\ntodayDeath : ${data.result.todayDeath}\ntotalCases : ${data.result.totalCases}\ntotalTest : ${data.result.totalTest}`
-                   reply(hasil)
                    break
 				case 'wiki':
 					if (args.length < 1) return reply('digite palavras-chave')
@@ -831,15 +787,6 @@ case 'timer':
                     hasil = await getBuffer(data.result)
                     client.sendMessage(from, hasil, image, {quoted: mek, caption: 'neh...'})
                     break
-                    case 'glitch':
-                    gh = body.slice(7)
-                    if (!isUser) return reply(mess.only.daftarB)
-                    teks1 = gh.split("|")[0];
-                    teks2 = gh.split("|")[1];
-                    data = await fetchJson(`https://tobz-api.herokuapp.com/api/textpro?theme=glitch&text1=${teks1}&text2=${teks2}&apikey=BotWeA`, {method: 'get'})
-                    hasil = await getBuffer(data.result)
-                    client.sendMessage(from, hasil, image, {quoted: mek, caption: 'neh...'})
-                    break
                      case 'leave':
                     if (!isGroup) return reply(mess.only.group)
                     if (!isGroupAdmins) return reply(mess.only.admin)
@@ -852,19 +799,6 @@ case 'timer':
 					}, 0)
                      break
 
-				case 'chord':
-					if (args.length < 1) return reply('onde está o título da música')
-                                        if (!isUser) return reply(mess.only.daftarB)
-					tels = body.slice(7)					
-					anu = await fetchJson(`https://arugaz.my.id/api/chord?q=${tels}`, {method: 'get'})
-					reply(anu.result)
-					break
-			case 'igstalk':
-                      hmm = await fetchJson(`https://freerestapi.herokuapp.com/api/v1/igs?u=${body.slice(9)}`)
-                     buffer = await getBuffer(hmm.data.profilehd)
-                     hasil = `Nome completo : ${hmm.data.fullname}\nseguidores : ${hmm.data.follower}\nSegue : ${hmm.data.following}\nPrivate : ${hmm.data.private}\nVerified : ${hmm.data.verified}\nbio : ${hmm.data.bio}`
-                    client.sendMessage(from, buffer, image, {quoted: mek, caption: hasil})
-                    break
                     case 'ownergrup':
 				  case 'ownergroup':
                client.updatePresence(from, Presence.composing) 
@@ -874,17 +808,6 @@ case 'timer':
            }
            client.sendMessage(from, options, text, { quoted: mek } )
 				break
-           case 'quran':
-					anu = await fetchJson(`https://api.banghasan.com/quran/format/json/acak`, {method: 'get'})
-					quran = `${anu.acak.ar.teks}\n\n${anu.acak.id.teks}\nQ.S ${anu.surat.nama} ayat ${anu.acak.id.ayat}`
-					client.sendMessage(from, quran, text, {quoted: mek})
-					break
-           case 'nekonime':
-           data = await fetchJson('https://waifu.pics/api/sfw/neko')
-           if (!isUser) return reply(mess.only.daftarB)
-           hasil = await getBuffer(data.url)
-           client.sendMessage(from, hasil, image, {quoted: mek})
-           break
 				case 'neko':
 					gatauda = body.slice(6)
 					reply(mess.wait)
@@ -986,21 +909,6 @@ case 'timer':
                     reply('Problemas foram relatados ao proprietário do BOT, relatórios falsos não serão respondidos.')
                     break
 
-               case 'rate':
-              client.updatePresence(from, Presence.composing) 
-              if (!isUser) return reply(mess.only.daftarB)
-                random = `${Math.floor(Math.random() * 100)}`
-               hasil = `Pertanyaan : *${body.slice(1)}*\n\nJawaban : *${random}%*`
-              reply(hasil)
-                break
-	    case 'kapankah':
-               client.updatePresence(from, Presence.composing) 
-                if (!isUser) return reply(mess.only.daftarB)
-               random = kapankah[Math.floor(Math.random() * (kapankah.length))]
-               random2 = `${Math.floor(Math.random() * 8)}`
-               hasil = `Pertanyaan : *${body.slice(1)}*\n\nJawaban : *${random2} ${random}*`
-              reply(hasil)
-                break
 			case 'closegc':
 					client.updatePresence(from, Presence.composing) 
 					if (!isGroup) return reply(mess.only.group)
@@ -1245,17 +1153,7 @@ case 'timer':
 						console.log(`Error :`, color(e,'red'))
 						reply('❌ *ERROR* ❌')
 					}
-					break
-				case 'logowolf':
-					var gh = body.slice(11)
-					var teks1 = gh.split("|")[0];
-					var teks2 = gh.split("|")[1];
-					if (args.length < 1) return reply(`onde está o texto? exemplo ${prefix}logowolf Toin|BOT`)
-					reply(mess.wait)
-					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/textpro?theme=wolflogo1&text1=${teks1}&text2=${teks2}&apikey=BotWeA`, {method: 'get'})
-					buffer = await getBuffer(anu.result)
-					client.sendMessage(from, buffer, image, {quoted: mek})
-					break				
+					break			
                                  case 'nsfw':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
@@ -1277,11 +1175,6 @@ case 'timer':
 					gatauda = body.slice(7)					
 					anu = await fetchJson(`https://arugaz.my.id/api/howbucins`, {method: 'get'})
 					reply(anu.desc)
-					break	
-				case 'quotes2':
-					gatauda = body.slice(8)					
-					anu = await fetchJson(`https://arugaz.my.id/api/randomquotes`, {method: 'get'})
-					reply(anu.quotes)
 					break		
 			    case 'waifu':
 					gatauda = body.slice(7)
@@ -1314,17 +1207,6 @@ case 'timer':
 					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/husbu2?apikey=BotWeA`, {method: 'get'})
 					buffer = await getBuffer(anu.result)
 					client.sendMessage(from, buffer, image, {quoted: mek})
-					break
-				case 'logowolf2':
-					var gh = body.slice(11)
-					var teks1 = gh.split("|")[0];
-					var teks2 = gh.split("|")[1];
-					if (args.length < 1) return reply(`onde está o texto? exemplo ${prefix}logowolf Toin|BOT`)
-                                        if (!isUser) return reply(mess.only.daftarB)
-					reply(mess.wait)
-					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/textpro?theme=wolflogo2&text1=${teks1}&text2=${teks2}&apikey=BotWeA`, {method: 'get'})
-					buffer = await getBuffer(anu.result)
-					client.sendMessage(from, buffer, image, {quoted: mek})
 					break	
                                 case 'delete':
 					case 'del':
@@ -1332,16 +1214,6 @@ case 'timer':
                                         if (!isUser) return reply(mess.only.daftarB)
 					if (!isGroupAdmins)return reply(mess.only.admin)
 					client.deleteMessage(from, { id: mek.message.extendedTextMessage.contextInfo.stanzaId, remoteJid: from, fromMe: true })
-					break
-                                case 'phlogo':
-					var gh = body.slice(7)
-					var gbl1 = gh.split("|")[0];
-					var gbl2 = gh.split("|")[1];
-					if (args.length < 1) return reply(`Cadê o texto, hum\nExemplo: ${prefix}phlogo |Toin|BOT`)
-					reply(mess.wait)
-					anu = await fetchJson(`https://mhankbarbars.herokuapp.com/api/textpro?theme=pornhub&text1=${gbl1}&text2=${gbl2}`, {method: 'get'})
-					buffer = await getBuffer(anu.result)
-					client.sendMessage(from, buffer, image, {quoted: mek})
 					break
                 case 'truth':
 					const trut =['Pernah suka sama siapa aja? berapa lama?','Kalau boleh atau kalau mau, di gc/luar gc siapa yang akan kamu jadikan sahabat?(boleh beda/sma jenis)','apa ketakutan terbesar kamu?','pernah suka sama orang dan merasa orang itu suka sama kamu juga?','Siapa nama mantan pacar teman mu yang pernah kamu sukai diam diam?','pernah gak nyuri uang nyokap atau bokap? Alesanya?','hal yang bikin seneng pas lu lagi sedih apa','pernah cinta bertepuk sebelah tangan? kalo pernah sama siapa? rasanya gimana brou?','pernah jadi selingkuhan orang?','hal yang paling ditakutin','siapa orang yang paling berpengaruh kepada kehidupanmu','hal membanggakan apa yang kamu dapatkan di tahun ini','siapa orang yang bisa membuatmu sange','siapa orang yang pernah buatmu sange','(bgi yg muslim) pernah ga solat seharian?','Siapa yang paling mendekati tipe pasangan idealmu di sini','suka mabar(main bareng)sama siapa?','pernah nolak orang? alasannya kenapa?','Sebutkan kejadian yang bikin kamu sakit hati yang masih di inget','pencapaian yang udah didapet apa aja ditahun ini?','kebiasaan terburuk lo pas di sekolah apa?']
@@ -1565,116 +1437,13 @@ case 'timer':
 				        uptime = process.uptime()
                                         client.sendMessage(from, `Speed: *${latensi.toFixed(4)} _Second_*\nDevice: *Black Shark 3*\nRAM: *8/128*\nData: *Smartfren*\nJaringan: *4G*\nStatus: *Di Charger*`, text, { quoted: mek})
                                         break
-                                case 'neonlogo':
-                                        var gh = body.slice(9)
-                                        var teks1 = gh.split("|")[0];
-                                        if (args.length < 1) return reply(`onde está o texto hum\nExemplo: ${prefix}neonlogo ToinBOT`)
-                                        reply(mess.wait)
-                                        anu = await fetchJson(`https://tobz-api.herokuapp.com/api/textpro?theme=neon_light&text=${teks1}&apikey=BotWeA`, {method: 'get'})
-                                        buffer = await getBuffer(anu.result)
-                                        client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Eh...'})
-                                        break
-                                case 'neonlogo2':
-                                        var gh = body.slice(10)
-                                        teks1 = gh.split("|")[0];
-                                        if (args.length < 1) return reply(`onde está o texto hum\nExemplo: ${prefix}neonlogo2 ToinBOT`)
-                                        reply(mess.wait)
-                                        anu = await fetchJson(`https://tobz-api.herokuapp.com/api/textpro?theme=neon_technology&text=${text1}&apikey=BotWeA`, {method: 'get'})
-                                        buffer = await getBuffer(anu.result)
-                                        client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Eh...'})
-                                        break
-                                case 'lionlogo':
-                                        var gh = body.slice(9)
-                                        var teks1 = gh.split("|")[0];
-                                        var teks2 = gh.split("|")[1];
-                                        if (args.length < 1) return reply(`teksnya mana um\nContoh: ${prefix}lionlogo Toin|BOT`)
-                                        reply(mess.wait)
-                                        anu = await fetchJson(`https://tobz-api.herokuapp.com/api/textpro?theme=lionlogo&text1=${text1}&text2=${teks2}&apikey=BotWeA`, {method: 'get'})
-                                        buffer = await getBuffer(anu.result)
-                                        client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Eh...'})
-                                        break
                                 /*case 'jsholat':
                                         tels = body.slice(8)
                                         if (args.length < 1) return reply('Daerahnya dimana kak?')
                                         anu = await fetchJson(`https://tobz-api.herokuapp.com/api/jadwalshalat?q=${tels}&apikey=BotWeA`, {method: 'get'})
                                         reply(anu.result)
                                         break*/
-                                case 'jokerlogo':
-                                        var gh = body.slice(10)
-                                        var teks1 = gh.split("|")[0];
-                                        if (args.length < 1) return reply(`onde está o texto um \nExemplo: ${prefix}jokerlogo ToinBOT`)
-                                        reply(mess.wait)
-                                        anu = await fetchJson(`https://tobz-api.herokuapp.com/api/textpro?theme=jokerlogo&text=${teks1}&apikey=BotWeA`, {method: 'get'})
-                                        buffer = await getBuffer(anu.result)
-                                        client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Eh...'})
-                                        break
-                                case 'jadwaltvnow':  
-				if (!isUser) return reply(mess.only.daftarB)
-                               reply(mess.wait)
-		               anu = await fetchJson(`http://api-melodicxt.herokuapp.com/api/jadwaltvnow?&apiKey=administrator`, {method: 'get'})
-			       reply(anu.result.jadwalTV)
-					break
-                                case 'afk':
-                                        tels = body.slice(4)
-                                        if (args.length < 1) return reply('kakak afk karena apa?')
-                                        if (!isUser) return reply(mess.only.daftarB)
-                                        var nom = mek.participant
-                                        const tag = {
-                                                text: `@${nom.split("@s.whatsapp.net")[0]} *TO AFK CCT ${tels} NAUM PERTURBE OKEI?*`,
-                                                contextInfo: { mentionedJid: [nom] }
-                                        }
-                                        client.sendMessage(from, tag, text, {quoted: mek})
-										break
-                                case 'shadow':
-                                        var gh = body.slice(7)
-                                        var teks1 = gh.split("|")[0];
-                                        if (args.length < 1) return reply(`onde está o texto hum\nExemplo: ${prefix}shadow ToinBOT`)
-                                        if (!isUser) return reply(mess.only.daftarB)
-                                        reply(mess.wait)
-                                        anu = await fetchJson(`https://tobz-api.herokuapp.com/api/photooxy?theme=shadow&text=${text1}&apikey=BotWeA`, {method: 'get'})
-                                        buffer = await getBuffer(anu.result)
-                                        client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Eh...'})
-                                        break
-                                case 'burnpaper':
-                                        var gh = body.slice(10)
-                                        var teks1 = gh.split("|")[0];
-                                        if (args.length < 1) return reply(`onde está o texto hum\nExemplo: ${prefix}burnpaper ToinBOT`)
-                                        if (!isUser) return reply(mess.only.daftarB)
-                                        reply(mess.wait)
-                                        anu = await fetchJson(`https://tobz-api.herokuapp.com/api/photooxy?theme=burn_paper&text=${teks1}&apikey=BotWeA`, {method: 'get'})
-                                        buffer = await getBuffer(anu.result)
-                                        client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Eh...'})
-                                        break
-                                case 'coffee':
-                                        var gh = body.slice(7)
-                                        var teks1 = gh.split("|")[0];
-                                        if (args.length < 1) return reply(`onde está o texto hum\nExemplo: ${prefix}coffee ToinBOT`)
-                                        if (!isUser) return reply(mess.only.daftarB)
-                                        reply(mess.wait)
-                                        anu = await fetchJson(`https://tobz-api.herokuapp.com/api/photooxy?theme=coffee&text=${teks1}&apikey=BotWeA`, {method: 'get'})
-                                        buffer = await getBuffer(anu.result)
-                                        client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Eh...'})
-                                        break
-                                case 'lovepaper':
-                                        var gh = body.slice(10)
-                                        var teks1 = gh.split("|")[0];
-                                        if (args.length < 1) return reply(`onde está o texto hum\nExemplo: ${prefix}lovepaper ToinBOT`)
-                                        if (!isUser) return reply(mess.only.daftarB)
-                                        reply(mess.wait)
-                                        anu = await fetchJson(`https://tobz-api.herokuapp.com/api/photooxy?theme=love_paper&text=${teks1}&apikey=BotWeA`, {method: 'get'})
-                                        buffer = await getBuffer(anu.result)
-                                        client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Eh...'})
-                                        break
-                                case 'woodblock':
-                                        var gh = body.slice(10)
-                                        var teks1 = gh.split("|")[0];
-                                        if (args.length < 1) return reply(`onde está o texto hum\nExemplo: ${prefix}woodblock ToinBOT`)
-                                        if (!isUser) return reply(mess.only.daftarB)
-                                        reply(mess.wait)
-                                        anu = await fetchJson(`https://tobz-api.herokuapp.com/api/photooxy?theme=wood_block&text=${teks1}&apikey=BotWeA`, {method: 'get'})
-                                        buffer = await getBuffer(anu.result)
-                                        client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Eh...'})
-                                        break
+                                
                                 case 'qowheart':
                                         var gh = body.slice(9)
                                         var teks1 = gh.split("|")[0];
@@ -1734,13 +1503,6 @@ case 'timer':
                                         anu = await fetchJson(`https://tobz-api.herokuapp.com/api/photooxy?theme=metalic_text_glow&text=${teks1}&apikey=BotWeA`, {method: 'get'})
                                         buffer = await getBuffer(anu.result)
                                         client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Eh...'})
-                                        break
-                                case 'fml2':
-                                        getauda = body.slice(6)
-                                        if (!isUser) return reply(mess.only.daftarB)
-                                        data = await fetchJson(`https://tobz-api.herokuapp.com/randomfmylife?apikey=BotWeA`, {method: 'get'})
-                                        hasil = `*Fuck My Life*\n${data.result}`
-                                        reply(hasil)
                                         break
 				case 'ttp':
 					if (args.length < 1) return reply('Textnya mana um?')
