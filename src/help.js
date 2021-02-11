@@ -16,8 +16,6 @@ const help = (prefix) => {
   ├─ ❏ ${prefix}stickergif
   ├─ ❏ ${prefix}toimg
   ├─ ❏ ${prefix}tomp3
-  ├─ ❏ ${prefix}bpink
-  ├─ ❏ ${prefix}marvellogo
   ├─ ❏ ${prefix}snowwrite
   ├─ ❏ ${prefix}3dtext
   ├─ ❏ ${prefix}water
@@ -88,7 +86,6 @@ const help = (prefix) => {
   │
   ├─ ❏ ${prefix}neonime
   ├─ ❏ ${prefix}pokemon
-  ├─ ❏ ${prefix}loli
   ├─ ❏ ${prefix}waifu
   ├─ ❏ ${prefix}randomanime
   ├─ ❏ ${prefix}husbu
