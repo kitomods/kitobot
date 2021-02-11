@@ -424,7 +424,7 @@ case 'timer':
               case 'criador':
                 case 'creator':
                   client.sendMessage(from, {displayname: "Jeff", vcard: vcard}, MessageType.contact, { quoted: mek})
-               client.sendMessage(from, 'numero daquele gostoso salva dps,MessageType.text, { quoted: mek} )
+               client.sendMessage(from, 'numero daquele gostoso salva dps',MessageType.text, { quoted: mek} )
                 break
 	case 'hidetag':
                 client.updatePresence(from, Presence.composing) 
