@@ -11,11 +11,9 @@ const help = (prefix) => {
 ▻${prefix}ping
 ▻${prefix}wame
 ▻${prefix}fig
-▻${prefix}stickergif
 ▻${prefix}toimg
 ▻${prefix}3dtext
 ▻${prefix}virtex
-▻${prefix}timer
  ▻ ${prefix}wiki
  ▻  ${prefix}wikien
 ◪ 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗦
