@@ -345,15 +345,6 @@ async function starts() {
                                         hisil = fs.readFileSync('./src/makerimg.jpg')
                                         client.sendMessage(from, hisil, image, {quoted: mek, caption: makermenu(prefix), text})
                                         break*/
-case 'timer':
-				if (args[1]=="detik") {var timer = args[0]+"000"
-				} else if (args[1]=="menit") {var timer = args[0]+"0000"
-				} else if (args[1]=="jam") {var timer = args[0]+"00000"
-				} else {return reply("*pilih:*\ndetik\nmenit\njam")}
-				setTimeout( () => {
-				reply("Waktu habis")
-				}, timer)
-				break
                 case 'bahasa':
 		client.sendMessage(from, bahasa(prefix, sender), text, {quoted: mek})
 				break
@@ -845,18 +836,6 @@ case 'timer':
 					}
 					break
 
-                      case 'bugreport':
-                     const bug = body.slice(5)
-                      if (pesan.length > 300) return client.sendMessage(from, 'Desculpe, o texto é muito longo, máximo de 300 letras', msgType.text, {quoted: mek})
-                        var nomor = mek.participant
-                       teks1 = `*[RELATÓRIO]*\nNúmero : @${nomor.split("@s.whatsapp.net")[0]}\nmensagem : ${pesan}`
-                      var options = {
-                         text: teks1,
-                         contextInfo: {mentionedJid: [nomor]},
-                     }
-                    client.sendMessage(nomerOwner, options, text, {quoted: mek})
-                    reply('Problemas foram relatados ao proprietário do BOT, relatórios falsos não serão respondidos.')
-                    break
 		    case 'menulinks':
 					if (!isGroup) return reply(mess.only.group)
 					client.sendMessage(from, menulinks(prefix, sender), text, {quoted: mek})
