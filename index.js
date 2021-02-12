@@ -969,13 +969,13 @@ async function starts() {
                                   case 'rg':
 					client.updatePresence(from, Presence.composing)
 					if (isUser) return reply('você já está registrado')
-					if (args.length < 1) return reply(`Parâmetro incorreto \nCommand : ${prefix}daftar nome|idade\nContoh : ${prefix}daftar Kito|18`)
+					if (args.length < 1) return reply(`Parâmetro incorreto \nCommand : ${prefix}daftar nome|idade\nContoh : ${prefix}daftar Toin|18`)
 					var reg = body.slice(8)
 					var jeneng = reg.split("|")[0];
 					var umure = reg.split("|")[1];
 						user.push(sender)
 						fs.writeFileSync('./database/json/user.json', JSON.stringify(user))
-						client.sendMessage(from, O registro foi bem sucedido com SN: TM08GK8PPHBSJDH10J\n\n[Nome]: ${jeneng}\nNúmero]: wa.me/${sender.split("@")[0]}\n[Idd]: ${umure}\nPara usar o bot\n\`\`\`Por favor\`\`\`\n\`\`\`enviar ${prefix}menu\`\`\`\n\`\`\`\nTotal de usuários ${user.length}\`\`\``, text, {quoted: mek})
+						client.sendMessage(from, `O registro foi bem sucedido com SN: TM08GK8PPHBSJDH10J\n\n[Nome]: ${jeneng}\n[numero]: wa.me/${sender.split("@")[0]}\n[Idade]: ${umure}\nPara usar o bot Por favor\nenviar ${prefix}menu\n\nTotal de usuários ${user.length}`, text, {quoted: mek})
 					break
                                 case 'welcome':
 					if (!isGroup) return reply(mess.only.group)
