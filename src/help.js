@@ -1,17 +1,14 @@
 const help = (prefix) => {
 	return `
-「 *🐊🐊KITO BOT🐊🐊* 」
+   🐊🐊𝗞𝗜𝗧𝗢 𝗕𝗢𝗧🐊🐊
 
-◪ *informações*
+◪ 𝗜𝗡𝗙𝗢𝗥𝗠𝗔𝗖𝗢𝗘𝗦
   ❏ Prefix: 「  ${prefix}  」
   ❏ Criador : 𖡜ꦽ̸ོ˚￫𝑲𝐈𝐓𝐎𖥨ํ∘̥⃟⸽⃟🌹
-
-◪ *SOBRE*
+  ❏${prefix}criador
+◪ 𝗙𝗔𝗭𝗘𝗥
 
 ▻${prefix}ping
-▻${prefix}bugreport
-◪ *FAZER*
-
 ▻${prefix}wame
 ▻${prefix}fig
 ▻${prefix}stickergif
@@ -19,24 +16,22 @@ const help = (prefix) => {
 ▻${prefix}3dtext
 ▻${prefix}virtex
 ▻${prefix}timer
-◪ *pesquisa*
-
  ▻ ${prefix}wiki
  ▻  ${prefix}wikien
-◪ *download*
+◪ 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗦
 
 ▻${prefix}images 
 ▻${prefix}ytmp3
 ▻${prefix}ytmp4
-◪ *MEME*
+◪ 𝗠𝗘𝗠𝗘
 
 ▻${prefix}meme
 ▻${prefix}memeindo
-◪ *som*
+◪ 𝗦𝗢𝗠
 
 ▻${prefix}play
 ▻${prefix}tts
-◪ *DONO*
+◪ 𝗗𝗢𝗡𝗢
 
 ▻${prefix}kitomenu
 ▻${prefix}setprefix
