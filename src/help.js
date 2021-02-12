@@ -8,6 +8,7 @@ const help = (prefix) => {
   ❏${prefix}criador
 ◪ 𝗙𝗔𝗭𝗘𝗥
 
+▻${prefix}menulinks
 ▻${prefix}ping
 ▻${prefix}wame
 ▻${prefix}fig
