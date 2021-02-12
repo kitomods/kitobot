@@ -24,6 +24,7 @@ const { negara } = require('./src/kodenegara')
 const { virtex } = require('./src/virtex')
 const { wait, simih, getBuffer, h2k, generateMessageID, getGroupAdmins, getRandom, banner, start, info, success, close } = require('./lib/functions')
 const { fetchJson } = require('./lib/fetcher')
+const { menulinks } = require('./src/menulinks')
 const { recognize } = require('./lib/ocr')
 /******END OF FILE INPUT******/
 
@@ -54,7 +55,7 @@ const _level = JSON.parse(fs.readFileSync('./database/json/level.json'))
 /******BEGIN OF MENU INPUT******/
 const { help } = require('./src/help')
 const { logomaker } = require('./database/menu/logomaker')
-const { toinmenu } = require('./src/toinmenu')
+const { kitomenu } = require('./src/kitomenu')
 const { menuadmin } = require('./src/menuadmin')
 const { nsfwmenu } = require('./src/nsfwmenu')
 /*const { mediamenu } = require('./database/menu/mediamenu')
@@ -856,7 +857,10 @@ case 'timer':
                     client.sendMessage(nomerOwner, options, text, {quoted: mek})
                     reply('Problemas foram relatados ao proprietário do BOT, relatórios falsos não serão respondidos.')
                     break
-
+		    case 'menulinks':
+					if (!isGroup) return reply(mess.only.group)
+					client.sendMessage(from, menulinks(prefix, sender), text, {quoted: mek})
+				  break
 			case 'closegc':
 					client.updatePresence(from, Presence.composing) 
 					if (!isGroup) return reply(mess.only.group)
