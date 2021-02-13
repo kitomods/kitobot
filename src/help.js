@@ -8,19 +8,18 @@ const help = (prefix) => {
   ❏${prefix}criador
 ◪ 𝗙𝗔𝗭𝗘𝗥
 
-▻${prefix}menulinks
+▻${prefix}menulinks (em desenvolvimento)
 ▻${prefix}ping
 ▻${prefix}wame
 ▻${prefix}fig
 ▻${prefix}toimg
 ▻${prefix}3dtext
 ▻${prefix}virtex
-▻ ${prefix}wiki
-▻  ${prefix}wikien
+▻${prefix}wiki
+▻${prefix}wikien
 ◪ 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗦
 
 ▻${prefix}images 
-▻${prefix}ytmp3
 ▻${prefix}ytmp4
 ◪ 𝗠𝗘𝗠𝗘
 
