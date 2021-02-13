@@ -376,7 +376,7 @@ async function starts() {
 						client.groupDemoteAdmin(from, mentioned)
 					}
 					break
-                  case 'promote':
+                  case 'promover':
 					client.updatePresence(from, Presence.composing) 
                                         if (!isUser) return reply(mess.only.daftarB)
 					if (!isGroup) return reply(mess.only.group)
@@ -711,7 +711,7 @@ async function starts() {
                      break
 
                     case 'ownergrup':
-				  case 'ownergroup':
+				  case 'criadorgrupo':
                client.updatePresence(from, Presence.composing) 
               options = {
           text: `Este proprietário do grupo é : @${from.split("-")[0]}`,
@@ -762,7 +762,7 @@ async function starts() {
 					client.sendMessage(mentioned, 'Tomonucu kskst', text)
 					}
 					break
-                 case 'linkgroup':
+                 case 'linkgrupo':
 				case 'linkgrup':
 				case 'linkgc':
 				    client.updatePresence(from, Presence.composing) 
@@ -796,7 +796,7 @@ async function starts() {
 					if (!isGroup) return reply(mess.only.group)
 					client.sendMessage(from, menulinks(prefix, sender), text, {quoted: mek})
 				  break
-			case 'closegc':
+			case 'fechargrupo':
 					client.updatePresence(from, Presence.composing) 
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
@@ -809,7 +809,7 @@ async function starts() {
 					client.groupSettingChange (from, GroupSettingChange.messageSend, true);
 					reply(close)
 					break
-                case 'opengc':
+                case 'abrirgrupo':
                 case 'bukagc':
 					client.updatePresence(from, Presence.composing) 
 					if (!isGroup) return reply(mess.only.group)
@@ -999,7 +999,7 @@ async function starts() {
 						reply('digite 1 para ativar, 0 para desativar o recurso')
 					}
 					break
-                                case 'delete':
+                                case 'd':
 					case 'del':
 					if (!isGroup)return reply(mess.only.group)
                                         if (!isUser) return reply(mess.only.daftarB)
