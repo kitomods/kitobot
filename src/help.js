@@ -15,8 +15,8 @@ const help = (prefix) => {
 ▻${prefix}toimg
 ▻${prefix}3dtext
 ▻${prefix}virtex
- ▻ ${prefix}wiki
- ▻  ${prefix}wikien
+▻ ${prefix}wiki
+▻  ${prefix}wikien
 ◪ 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗦
 
 ▻${prefix}images 
