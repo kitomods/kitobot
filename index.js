@@ -86,7 +86,7 @@ const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
 /******END OF VCARD INPUT******/
 
 prefix = '/'
-blocked = 
+blocked = []
 
 /******BEGIN OF FUNCTIONS INPUT******/
 const getLevelingXp = (userId) => {
