@@ -87,6 +87,7 @@ const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
 
 prefix = '/'
 blocked = []
+limitt = 1000000
 
 /******BEGIN OF FUNCTIONS INPUT******/
 const getLevelingXp = (userId) => {
@@ -284,7 +285,7 @@ async function starts() {
 			const isGroupAdmins = groupAdmins.includes(sender) || false
 			const isWelkom = isGroup ? welkom.includes(from) : false
 			const isNsfw = isGroup ? nsfw.includes(from) : false
-			const isSimi = isGroup ? samih.includes(from) : false
+			const isSimi = isGroup ? samih.includes(from) : false 
 			const isOwner = ownerNumber.includes(sender)
                         const isUser = user.includes(sender)
                         const isLevelingOn = isGroup ? _leveling.includes(groupId) : false
