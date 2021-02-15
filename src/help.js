@@ -4,7 +4,7 @@ const help = (prefix) => {
 
 ◪ 𝗜𝗡𝗙𝗢𝗥𝗠𝗔𝗖𝗢𝗘𝗦
   ❏ Prefix: 「  ${prefix}  」
-  ❏ Criador : 𖡜ꦽ̸ོ˚￫𝑲𝐈𝐓𝐎𖥨ํ∘̥⃟⸽⃟🌹
+  ❏ Criador : 𝑲𝐈𝐓𝐎
   ❏${prefix}criador
 ◪ 𝗙𝗔𝗭𝗘𝗥
 
