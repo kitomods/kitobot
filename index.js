@@ -249,7 +249,7 @@ async function starts() {
 			mess = {
 				wait: '⌛ Calmaer opoha to fazendo ⌛',
 				success: '✔️ Sucesso ✔️',
-                                levelon: '❬ ✔ ❭ *habilitar Level*',
+                                levelon: '❬ � �� ❭ *habilitar Level*',
 				leveloff: ' ❬ X ❭  *desabilitar Level*',
 				levelnoton: '❬ X ❭ *level não ativo*',
 				levelnol: '*Pqp kskst level* 0 ',
@@ -263,7 +263,7 @@ async function starts() {
 					ownerB: '[❗] Este comando só pode ser usado pelo kito! ❌',
 					admin: '[❗] Este comando só pode ser usado por administradores de grupo! ❌',
 					Badmin: '[❗] Este comando só pode ser usado quando o bot se torna administrador! ❌',
-                                        daftarB: `── 「REGISTRE-SE」 ──\nOlá como!\nVocê não está registrado no banco de dados, \n\nComando : ${prefix}rg nome|idade\nExemplo : ${prefix}rg kito|14`,
+                                        daftarB: `REGISTRE-SE\nOlá como!\nVocê não está registrado no banco de dados, \n\nComando : ${prefix}rg (nome\nExemplo : ${prefix}rg kito|`,
 				}
 			}
     			const apakah = ['Ya','Tidak']
@@ -671,7 +671,7 @@ async function starts() {
 						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 						buff = await client.downloadMediaMessage(encmedia)
 						for (let _ of anu) {
-							client.sendMessage(_.jid, buff, image, {caption: `*「 BROADCAST 」*\n\n${body.slice(4)}`})
+							client.sendMessage(_.jid, buff, image, {caption: `AVISO\n\n${body.slice(4)}`})
 						}
 						reply('')
 					} else {
@@ -689,7 +689,7 @@ async function starts() {
 						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 						buff = await client.downloadMediaMessage(encmedia)
 						for (let _ of groupMembers) {
-							client.sendMessage(_.jid, buff, image, {caption: `*「 BC GROUP 」*\n*Group* : ${groupName}\n\n${body.slice(6)}`})
+							client.sendMessage(_.jid, buff, image, {caption: `AVISO\n*Group* : ${groupName}\n\n${body.slice(6)}`})
 						}
 						reply('')
 					} else {
@@ -717,7 +717,7 @@ async function starts() {
 					}, 0)
                      break
 
-                    case 'ownergrup':
+                    case 'criadordogrupo':
 				  case 'criadorgrupo':
                client.updatePresence(from, Presence.composing) 
               options = {
@@ -938,9 +938,9 @@ async function starts() {
 					var umure = reg.split("|")[1];
 						user.push(sender)
 						fs.writeFileSync('./database/json/user.json', JSON.stringify(user))
-						client.sendMessage(from, `O registro foi bem sucedido com SN: TM08GK8PPHBSJDH10J\n\n[Nome]: ${jeneng}\n[numero]: wa.me/${sender.split("@")[0]}\n[Idade]: ${umure}\nPara usar o bot Por favor\nenviar ${prefix}menu\n\nTotal de usuários ${user.length}`, text, {quoted: mek})
+						client.sendMessage(from, `O registro foi bem sucedido\n      [Nome]: ${jeneng}\n      [numero]: wa.me/${sender.split("@")[0]}\n     Para usar o bot Por favor enviar\n     ${prefix}menu\n      Total de usuários ${user.length}`, text, {quoted: mek})
 					break
-                                case 'welcome':
+                                case 'bemvindo':
 					if (!isGroup) return reply(mess.only.group)
                                         if (!isUser) return reply(mess.only.daftarB)
 					if (!isGroupAdmins) return reply(mess.only.Badmin)
@@ -1235,14 +1235,14 @@ async function starts() {
                                         reply(anu.result)
                                         break*/
                                 
-                                case 'clearall':
+                                case 'limpar':
 					if (!isOwner) return reply('Kamu siapa?')
 					anu = await client.chats.all()
 					client.setMaxListeners(25)
 					for (let _ of anu) {
 						client.deleteChat(_.jid)
 					}
-					reply('Pronto Senor')
+					reply('pronto kito,tudo limpinho')
 					break
 				case 'clone':
 					if (!isGroup) return reply(mess.only.group)
