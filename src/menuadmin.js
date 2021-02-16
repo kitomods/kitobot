@@ -4,7 +4,7 @@ const menuadmin = (prefix, pushname) => {
  
  ◪ *COMANDO DOS ADMINS*
 ▻${prefix}bemvindo
-▻${prefix}simih
+▻${prefix}simi
 ▻${prefix}abrirgrupo
 ▻${prefix}fechargrupo
 ▻${prefix}promover
