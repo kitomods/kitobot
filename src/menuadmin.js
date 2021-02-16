@@ -3,6 +3,7 @@ const menuadmin = (prefix, pushname) => {
  da adm pro bot faz isso
  
  ◪ *COMANDO DOS ADMINS*
+▻${prefix}bemvindo
 ▻${prefix}simih
 ▻${prefix}abrirgrupo
 ▻${prefix}fechargrupo
