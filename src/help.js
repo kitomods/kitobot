@@ -8,19 +8,17 @@ const help = (prefix) => {
   ❏${prefix}criador
 ◪ 𝗙𝗔𝗭𝗘𝗥
 
+▻${prefix}imagem (transforma fig em imagem)
+▻${prefix}menulinks (logo add mais coisas)
+▻${prefix}fig (imagem ou gif ate 6 seg)
 ▻${prefix}simi (texto)
-▻${prefix}menulinks (em desenvolvimento)
 ▻${prefix}ping
 ▻${prefix}wame
-▻${prefix}fig
-▻${prefix}toimg
-▻${prefix}3dtext
 ▻${prefix}virtex
 ▻${prefix}wiki
 ▻${prefix}wikien
 ◪ 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗦
-
-▻${prefix}images 
+ 
 ▻${prefix}ytmp4
 ◪ 𝗠𝗘𝗠𝗘
 
