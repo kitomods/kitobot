@@ -408,11 +408,6 @@ async function starts() {
 				if (data.error) return reply(data.error)
 				reply(data.result)
 				break
-				case '3dtext':
-                data = await await getBuffer(`https://docs-jojo.herokuapp.com/api/text3d?text=${body.slice(8)}`)
-                if (!isUser) return reply(mess.only.daftarB)
-                client.sendMessage(from, data, image, {quoted: mek, caption: body.slice(8)})
-                break
               case 'criador':
                 case 'creator':
                   client.sendMessage(from, {displayname: "Jeff", vcard: vcard}, MessageType.contact, { quoted: mek})
@@ -900,7 +895,7 @@ async function starts() {
 					})
 					break
 
-				case 'toimg':
+				case 'imagem':
 				    client.updatePresence(from, Presence.composing)
                                     if (!isUser) return reply(mess.only.daftarB)
 					if (!isQuotedSticker) return reply('❌ Apenas Stickers ❌')
@@ -932,13 +927,13 @@ async function starts() {
                                   case 'rg':
 					client.updatePresence(from, Presence.composing)
 					if (isUser) return reply('você já está registrado')
-					if (args.length < 1) return reply(`Parâmetro incorreto \nCommand : ${prefix}daftar nome|idade\nContoh : ${prefix}daftar Toin|18`)
+					if (args.length < 1) return reply(`Parâmetro incorreto \nCommand : ${prefix} rg (nome/nick)\nContoh : ${prefix}rg kito`)
 					var reg = body.slice(8)
 					var jeneng = reg.split("|")[0];
 					var umure = reg.split("|")[1];
 						user.push(sender)
 						fs.writeFileSync('./database/json/user.json', JSON.stringify(user))
-						client.sendMessage(from, `O registro foi bem sucedido\n      [Nome]: ${jeneng} \n      [numero]: wa.me/${sender.split("@")[0]}\n para usar o bot mande = ${prefix}menu\n      Total de usuários ${user.length} `, text, {quoted: mek})
+						client.sendMessage(from, `pode usar o bot agr seu ze buceta\n\\\\\\[Nome]: ${jeneng} \n\\\\\\[numero]: wa.me/${sender.split("@")[0]}\n \\\\\\para usar o bot mande = ${prefix}menu\n\\\\\\Total de usuários ${user.length} `, text, {quoted: mek})
 					break
                                 case 'bemvindo':
 					if (!isGroup) return reply(mess.only.group)
@@ -1226,7 +1221,7 @@ async function starts() {
                                         const latensi = speed() - timestamp
                                         client.updatePresence(from, Presence.composing) 
 				        uptime = process.uptime()
-                                        client.sendMessage(from, `Speed: *${latensi.toFixed(4)} _Second_*\nDevice: *Black Shark 3*\nRAM: *8/128*\nData: *Smartfren*\nJaringan: *4G*\nStatus: *Di Charger*`, text, { quoted: mek})
+                                        client.sendMessage(from, `Velocidade: ${latensi.toFixed(4)} Segundos\nTrabalhando: Redmi Note 8\nRAM: : *Di Charger 4/64*`, text, { quoted: mek})
                                         break
                                 /*case 'jsholat':
                                         tels = body.slice(8)
