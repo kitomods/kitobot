@@ -209,7 +209,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `Xauzinho @${num.split('@')[0]}👋`
+				teks = `ja vai tarde filho da puta @${num.split('@')[0]}👋`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			}
@@ -263,7 +263,7 @@ async function starts() {
 					ownerB: '[❗] Este comando só pode ser usado pelo kito! ❌',
 					admin: '[❗] Este comando só pode ser usado por administradores de grupo! ❌',
 					Badmin: '[❗] Este comando só pode ser usado quando o bot se torna administrador! ❌',
-                                        daftarB: `REGISTRE-SE\nOlá como!\nVocê não está registrado no banco de dados, \n\nComando : ${prefix}rg (nome\nExemplo : ${prefix}rg kito|`,
+                                        daftarB: `REGISTRE-SE\nOlá como!\nVocê não está registrado no banco de dados \n\nComando : ${prefix}rg (nome/nick)\nExemplo : ${prefix}rg kito`,
 				}
 			}
     			const apakah = ['Ya','Tidak']
@@ -349,7 +349,7 @@ async function starts() {
 		client.sendMessage(from, bahasa(prefix, sender), text, {quoted: mek})
 				break
 				case 'kitomenu':
-					client.sendMessage(from, toinmenu(prefix, sender), text, {quoted: mek})
+					client.sendMessage(from, kitomenu(prefix, sender), text, {quoted: mek})
 							break
 							case 'menuadmin':
 								client.sendMessage(from, menuadmin(prefix, sender), text, {quoted: mek})
@@ -400,7 +400,7 @@ async function starts() {
 				  case 'wame':
   client.updatePresence(from, Presence.composing) 
       options = {
-          text: `「 *SELF WHATSAPP* 」\n\n_Solicitado por_ : *@${sender.split("@s.whatsapp.net")[0]}\n\nSeu link Whatsapp : *https://wa.me/${sender.split("@s.whatsapp.net")[0]}*\n*Or ( / )*\n*https://api.whatsapp.com/send?phone=${sender.split("@")[0]}*`,
+          text: `numero do zap\n\n_Solicitado por_ : *@${sender.split("@s.whatsapp.net")[0]}\n\nSeu link Whatsapp : *https://wa.me/${sender.split("@s.whatsapp.net")[0]}*\n*Or ( / )*\n*https://api.whatsapp.com/send?phone=${sender.split("@")[0]}*`,
           contextInfo: { mentionedJid: [sender] }
     }
     client.sendMessage(from, options, text, { quoted: mek } )
