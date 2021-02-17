@@ -6,9 +6,11 @@ const help = (prefix) => {
   ❏ Prefix: 「  ${prefix}  」
   ❏ Criador : 𝑲𝐈𝐓𝐎
   ❏${prefix}criador
+  ❏${prefix}kitomenu
 ◪ 𝗙𝗔𝗭𝗘𝗥
 
 ▻${prefix}imagem (transforma fig em imagem)
+▻${prefix}ytmp4 (link do yt pra baixar o video)
 ▻${prefix}menulinks (logo add mais coisas)
 ▻${prefix}fig (imagem ou gif ate 6 seg)
 ▻${prefix}simi (texto)
@@ -17,9 +19,6 @@ const help = (prefix) => {
 ▻${prefix}virtex
 ▻${prefix}wiki
 ▻${prefix}wikien
-◪ 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗦
- 
-▻${prefix}ytmp4
 ◪ 𝗠𝗘𝗠𝗘
 
 ▻${prefix}meme
@@ -28,15 +27,6 @@ const help = (prefix) => {
 
 ▻${prefix}play
 ▻${prefix}tts
-◪ 𝗗𝗢𝗡𝗢
-
-▻${prefix}kitomenu
-▻${prefix}setprefix
-▻${prefix}block
-▻${prefix}bc
-▻${prefix}bcgc
-▻${prefix}clone
-▻${prefix}limpar
 
 `
 }
