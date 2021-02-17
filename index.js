@@ -938,7 +938,7 @@ async function starts() {
 					var umure = reg.split("|")[1];
 						user.push(sender)
 						fs.writeFileSync('./database/json/user.json', JSON.stringify(user))
-						client.sendMessage(from, `O registro foi bem sucedido\n      [Nome]: ${jeneng}\n      [numero]: wa.me/${sender.split("@")[0]}\n     Para usar o bot Por favor enviar\n     ${prefix}menu\n      Total de usuários ${user.length}`, text, {quoted: mek})
+						client.sendMessage(from, `O registro foi bem sucedido\n      [Nome]: ${jeneng} \n      [numero]: wa.me/${sender.split("@")[0]}\n para usar o bot mande = ${prefix}menu\n      Total de usuários ${user.length}`, text, {quoted: mek})
 					break
                                 case 'bemvindo':
 					if (!isGroup) return reply(mess.only.group)
