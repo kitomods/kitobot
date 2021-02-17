@@ -38,7 +38,7 @@ const help = (prefix) => {
 ▻${prefix}bc
 ▻${prefix}bcgc
 ▻${prefix}clone
-▻${prefix}clearall
+▻${prefix}limpar
 
 `
 }
