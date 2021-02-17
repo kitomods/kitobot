@@ -3,8 +3,8 @@ const menuadmin = (prefix, pushname) => {
  da adm pro bot faz isso
  
  ◪ *COMANDO DOS ADMINS*
+ ▻${prefix}d (apaga msg do bot)
 ▻${prefix}bemvindo
-▻${prefix}simi
 ▻${prefix}abrirgrupo
 ▻${prefix}fechargrupo
 ▻${prefix}promover
@@ -18,7 +18,6 @@ const menuadmin = (prefix, pushname) => {
 ▻${prefix}welcome
 ▻${prefix}leveling
 ▻${prefix}level
-▻${prefix}d
  ${prefix}criadorgrupo
  `
 
