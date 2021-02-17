@@ -1,7 +1,7 @@
 const help = (prefix) => {
 	return `
    🐊🐊𝗞𝗜𝗧𝗢 𝗕𝗢𝗧🐊🐊
-*${mdata.subject}* 
+*${mdata.subject}* 𝗗𝗢𝗠𝗜𝗡𝗔 𝗖𝗔𝗥𝗔𝗟𝗛𝗢🐊
 ◪ 𝗜𝗡𝗙𝗢𝗥𝗠𝗔𝗖𝗢𝗘𝗦
   ❏ Prefix: 「  ${prefix}  」
   ❏ Criador : 𝑲𝐈𝐓𝐎
@@ -28,7 +28,7 @@ const help = (prefix) => {
 ▻${prefix}play
 ▻${prefix}tts
 
-`
+     `
 }
 
 exports.help = help
