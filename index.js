@@ -461,7 +461,7 @@ async function starts() {
 					anu = await fetchJson(`https://arugaz.my.id/api/wikien?q=${tels}`, {method: 'get'})
 					reply(anu.result)
 					break
-           case 'simi'
+           case 'simi':
              case 's':
 					if (args.length < 1) return reply('Onde está o texto?')
 					teks = body.slice(5)
