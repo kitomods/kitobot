@@ -36,7 +36,6 @@ const kagApi = require('@kagchi/kag-api')
 const fetch = require('node-fetch')
 const tiktod = require('tiktok-scraper')
 const ffmpeg = require('fluent-ffmpeg')
-const google = require('google-it')
 const { removeBackgroundFromImageFile } = require('remove.bg')
 const imgbb = require('imgbb-uploader')
 const lolis = require('lolis.life')
@@ -1129,24 +1128,6 @@ async function starts() {
 							reply('❌ *ERROR* ❌')
 						}
 						break
-			case 'google':
-                const googleQuery = body.slice(8)
-               if (isBanned) return reply(mess.only.benned)    
-				if (!isUser) return reply(mess.only.userB)
-				if (isLimit(sender)) return reply(limitend(pushname2))
-                if(googleQuery == undefined || googleQuery == ' ') return reply(`*Resultado Da Pesquisa : ${googleQuery}* tidak ditemukan`)
-                google({ 'query': googleQuery }).then(results => {
-                let vars = `_*Resultado Pesquisa : ${googleQuery}*_\n`
-                for (let i = 0; i < results.length; i++) {
-                    vars +=  `\n\n\n*Titulo* : ${results[i].title}\n\n*Descricao* : ${results[i].snippet}\n\n*Link* : ${results[i].link}\n\n`
-                }
-                    reply(vars)
-                }).catch(e => {
-                    console.log(e)
-                    client.sendMessage(from, 'Google Error : ' + e);
-                })
-                await limitAdd(sender) 
-                break 
 					case 'trap':
 						try {
 							if (!isNsfw) return reply('❌ *NSFW Desativado* ❌')
