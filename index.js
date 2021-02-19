@@ -461,7 +461,8 @@ async function starts() {
 					anu = await fetchJson(`https://arugaz.my.id/api/wikien?q=${tels}`, {method: 'get'})
 					reply(anu.result)
 					break
-             case 'simi':
+           case 'simi'
+             case 's':
 					if (args.length < 1) return reply('Onde está o texto?')
 					teks = body.slice(5)
 					anu = await simih(teks) //fetchJson(`https://mhankbarbars.herokuapp.com/api/samisami?text=${teks}`, {method: 'get'})
@@ -576,7 +577,7 @@ async function starts() {
 						})
 					})
 					break
-				case 'listadmins':
+				case 'listaadm':
 				case 'adminlist':
 					client.updatePresence(from, Presence.composing) 
                                         if (!isUser) return reply(mess.only.daftarB)
@@ -641,7 +642,7 @@ async function starts() {
 						teks += `╠➥ @${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
-					mentions('╔══✪〘 Mencionando Todos 〙✪══\n╠➥'+teks+'╚═〘 Toin BOT 〙', members_id, true)
+					mentions('╔══✪〘 Mencionando Todos 〙✪══\n╠➥'+teks+'╚═〘 kito bot 〙', members_id, true)
 					break
 					case 'quotesnime':
 					nimek = await fetchJson('https://animechanapi.xyz/api/quotes/random')
