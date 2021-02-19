@@ -1268,13 +1268,16 @@ async function starts() {
                                         client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Nih kak...'})
                                         break*/
 				default:
+					if (body.startsWith(`${prefix}${command}`)) {
+                  reply(`comando n existe fdp`)
+                  }
 					if (isGroup && isSimi && budy != undefined) {
 						console.log(budy)
 						muehe = await simih(budy)
 						console.log(muehe)
 						reply(muehe)
 					} else {
-						console.log(color('[WARN]','red'), 'Unregistered Command from', color(sender.split('@')[0]))
+						console.log(color('[FXC7BOT]','red'), 'Comando n�o registrado', color(sender.split('@')[0]))
 					}
                            }
 		} catch (e) {
