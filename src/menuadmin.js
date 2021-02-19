@@ -12,13 +12,10 @@ const menuadmin = (prefix, pushname) => {
 ▻${prefix}marcar
 ▻${prefix}add
 ▻${prefix}kick
-▻${prefix}listadmins
-▻${prefix}linkgrupo
 ▻${prefix}leave
 ▻${prefix}welcome
 ▻${prefix}leveling
 ▻${prefix}level
- ${prefix}criadorgrupo
  `
 
 
