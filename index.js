@@ -18,11 +18,11 @@ const {
 } = require('@adiwajshing/baileys')
 
 /******BEGIN OF FILE INPUT******/
+const { wait, simih, getBuffer, h2k, generateMessageID, getGroupAdmins, getRandom, banner, start, info, success, close } = require('./lib/functions')
 const { color, bgcolor } = require('./lib/color')
 const { bahasa } = require('./src/bahasa')
 const { negara } = require('./src/kodenegara')
 const { virtex } = require('./src/virtex')
-const { wait, simih, getBuffer, h2k, generateMessageID, getGroupAdmins, getRandom, banner, start, info, success, close } = require('./lib/functions')
 const { fetchJson } = require('./lib/fetcher')
 const { menulinks } = require('./src/menulinks')
 const { recognize } = require('./lib/ocr')
@@ -240,8 +240,6 @@ async function starts() {
 			const { text, extendedText, contact, location, liveLocation, image, video, sticker, document, audio, product } = MessageType
 			const time = moment.tz('Asia/Jakarta').format('DD/MM HH:mm:ss')
 			const nameReq = insom ? mek.participant : mek.key.remoteJid
-            pushname2 = client.contacts[nameReq] != undefined ? client.contacts[nameReq].vname || client.contacts[nameReq].notify : undefined
-			const date = moment.tz('Asia/Jakarta').format('DD,MM,YY')
 			body = (type === 'conversation' && mek.message.conversation.startsWith(prefix)) ? mek.message.conversation : (type == 'imageMessage') && mek.message.imageMessage.caption.startsWith(prefix) ? mek.message.imageMessage.caption : (type == 'videoMessage') && mek.message.videoMessage.caption.startsWith(prefix) ? mek.message.videoMessage.caption : (type == 'extendedTextMessage') && mek.message.extendedTextMessage.text.startsWith(prefix) ? mek.message.extendedTextMessage.text : ''
 			budy = (type === 'conversation') ? mek.message.conversation : (type === 'extendedTextMessage') ? mek.message.extendedTextMessage.text : ''
 			const command = body.slice(1).trim().split(/ +/).shift().toLowerCase()
@@ -265,7 +263,7 @@ async function starts() {
 					ownerB: '[❗] Este comando só pode ser usado pelo kito! ❌',
 					admin: '[❗] Este comando só pode ser usado por administradores de grupo! ❌',
 					Badmin: '[❗] Este comando só pode ser usado quando o bot se torna administrador! ❌',
-                                        daftarB: `REGISTRE-SE\nOlá como!\n ola ${pushname2} vc n esta registrado,se registre, para usar o bot. \n\nComando : ${prefix}rg (nome/nick)\nExemplo : ${prefix}rg ${pushname2}`,
+                                        daftarB: `REGISTRE-SE\nOlá como!\n ola vc n esta registrado,se registre, para usar o bot. \n\nComando : ${prefix}rg (nome/nick)\nExemplo : ${prefix}rg`,
 				}
 			}
     			const apakah = ['Ya','Tidak']
