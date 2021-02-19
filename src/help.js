@@ -14,7 +14,7 @@ const help = (prefix) => {
   ❏${prefix}menuadmin
   ❏▻${prefix}menulinks (logo add mais coisas)
 ◪ 𝗙𝗔𝗭𝗘𝗥
-▻${prefix}linkgrupo
+
 ▻${prefix}wiki (olha na wikipedia em indonesio)
 ▻${prefix}imagem (transforma fig em imagem)
 ▻${prefix}play (nome da musica q quer baixar)
@@ -22,6 +22,7 @@ const help = (prefix) => {
 ▻${prefix}tts (pt) (texto q vc quer q fale)
 ▻${prefix}memeindo (meme em ingles)
 ▻${prefix}fig (imagem ou gif ate 6 seg)
+▻${prefix}google (pesquisa no google)
 ▻${prefix}wame (link pro seu chat)
 ▻${prefix}wikien (tbm n sei oq faz)
 ▻${prefix}meme (a msm coisa)
