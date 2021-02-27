@@ -246,7 +246,7 @@ async function starts() {
 			const isCmd = body.startsWith(prefix)
 
 			mess = {
-				wait: 'Em andamento  %',
+				wait: 'Em andamento  %',
 				success: '✔️ Sucesso ✔️',
                                 levelon: '❬ � �� ❭ *habilitar Level*',
 				leveloff: ' ❬ X ❭  *desabilitar Level*',
@@ -262,7 +262,7 @@ async function starts() {
 					ownerB: '[❗] Este comando só pode ser usado pelo kito! ❌',
 					admin: '[❗] Este comando só pode ser usado por administradores de grupo! ❌',
 					Badmin: '[❗] Este comando só pode ser usado quando o bot se torna administrador! ❌',
-                                        daftarB: `REGISTRE-SE\nOlá como!\n ola vc n esta registrado,se registre, para usar o bot. \n\nComando : ${prefix}rg (nome/nick)\nExemplo : ${prefix}rg`,
+                                        daftarB: `REGISTRE-SE\nOlá\n ola vc n esta registrado,se registre, para usar o bot. \n\nComando : ${prefix}rg (nome/nick)\nExemplo : ${prefix}rg`,
 				}
 			}
     			const apakah = ['Ya','Tidak']
