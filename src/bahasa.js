@@ -1,5 +1,5 @@
 const bahasa = (prefix, sender) => {
-	return `*List kode Bahasa*
+	return `lista de idiomas para o camando tts
 
 	*Code       Bahasa*
     sq        Albanian
