@@ -1,10 +1,10 @@
 const help = (prefix) => {
 	return `
-   🐊🐊𝗞𝗜𝗧𝗢 𝗕𝗢𝗧🐊🐊
+   🐊🐊K҉ I҉T҉O҉B҉O҉T҉🐊🐊
 
 ◪ 𝗜𝗡𝗙𝗢𝗥𝗠𝗔𝗖𝗢𝗘𝗦
   ❏ Prefix: 「  ${prefix}  」
-  ❏ Criador : 𝑲𝐈𝐓𝐎
+  ❏ Criador : K҉ I҉T҉O҉
   ❏${prefix}criador
   ❏${prefix}criadorgrupo
   
