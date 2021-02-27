@@ -1,20 +1,19 @@
 const menuadmin = (prefix, pushname) => {
- return `𖡜ꦽ̸ོ˚￫𝑲𝐈𝐓𝐎𖥨ํ∘̥⃟⸽⃟🌹domina
+ return `    K҉ I҉T҉O҉B҉O҉T҉  D҉O҉M҉IN҉A҉
  da adm pro bot faz isso
  
- ◪ *COMANDO DOS ADMINS*
+ ◪ COMANDO DOS ADMINS
+▻${prefix}bemvindo (da as boas vindas)
+▻${prefix}marcar (marca todos)
  ▻${prefix}d (apaga msg do bot)
-▻${prefix}bemvindo
-▻${prefix}abrirgrupo
+ ▻${prefix}leave (bot mete o pé)
+▻${prefix}leveling (liga o level)
+▻${prefix}add 5528999...
+▻${prefix}promover @
 ▻${prefix}fechargrupo
-▻${prefix}promover
-▻${prefix}demote
-▻${prefix}marcar
-▻${prefix}add
-▻${prefix}kick
-▻${prefix}leave
-▻${prefix}welcome
-▻${prefix}leveling
+▻${prefix}abrirgrupo
+▻${prefix}demote @
+▻${prefix}kick @
 ▻${prefix}level
  `
 
