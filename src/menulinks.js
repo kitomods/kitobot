@@ -3,6 +3,9 @@ const menulinks = (prefix, pushname) => {
 🜲𝐌𝐄𝐍𝐔 𝐃𝐄 𝐋𝐈𝐍𝐊𝐒🜲
   
                🜲𝗔𝗣𝗣𝗦🜲
+ 𒆕𝗧𝗘𝗫𝗧𝗡𝗢𝗪
+ http://www.mediafire.com/file/86704f30fz4lm7n/%25F0%259F%2591%258D%25F0%259F%2598%258ETEXTNOW.apk/file
+ 
 𒆕𝗠𝗜𝗡𝗘𝗖𝗥𝗔𝗙𝗧
 https://www.mediafire.com/file/khqflpzr02u721m/minecraft-1-16-201-01-xbox-servers.apk/file
 
@@ -10,25 +13,30 @@ https://www.mediafire.com/file/khqflpzr02u721m/minecraft-1-16-201-01-xbox-server
 https://www.mediafire.com/file/1sthqzz9d99pc4o/SPOTFY+PREMIUM+ATUALIZADO+2021+%C2%A9007Apk's.apk/file
 
               🜲𝗜𝗠𝗨𝗡𝗘𝗦 𝗣𝗥𝗜𝗠𝗔𝗥𝗜𝗢𝗦🜲
-𒆕𝗕𝗔𝗦𝗘=⏤͟͟͞͞𝐕𝐈𝐍𝐈𝐙𝐈𝐍⸸𝐓𝐔𝚴𝚴𝚵𝐃•᭄ᷟ
-https://www.mediafire.com/file/yv9ga2sy3tftvs5/%25E2%258F%25A4%25CD%259F%25CD%259E%25CD%259F%25CD%259E%25F0%259D%2590%2595%25F0%259D%2590%2588%25F0%259D%2590%258D%25F0%259D%2590%2588%25F0%259D%2590%2599%25F0%259D%2590%2588%25F0%259D%2590%258D%25E2%25B8%25B8%25F0%259D%2590%2593%25F0%259D%2590%2594%25F0%259D%259A%25B4%25F0%259D%259A%25B4%25F0%259D%259A%25B5%25F0%259D%2590%2583%25E2%2580%25A2%25E1%25AD%2584%25E1%25B7%259F.apk/file
+              
+              𝗜𝗠𝗨𝗡𝗘 𝗗𝗘 𝗨𝗠 𝗣𝗔𝗥𝗖𝗘𝗜𝗥𝗢
+ https://enrt.eu/QlVzK 
+ passa pelo encurta pra ta insentivando o trabalho dele
+ imune mto bonito slc, tudo de bom
+ 
+𒆕𝗕𝗔𝗦𝗘=ҒᎬ̂ΝᏆХ V10
+https://www.mediafire.com/file/0tz5xqd5jilor0e/F%25C3%258ANIX_V10base.apk/file
 
-𒆕༒︎𝗕𝗜𝗟𝗟𝗦_𝗩8༒︎
-https://www.mediafire.com/file/6hczfp3pf828gzv/%25E0%25BC%2592%25EF%25B8%258E%25F0%259D%2597%2595%25F0%259D%2597%259C%25F0%259D%2597%259F%25F0%259D%2597%259F%25F0%259D%2597%25A6_%25F0%259D%2597%25A98%25E0%25BC%2592%25EF%25B8%258E_r.apk/file
+𒆕BILLS_DBZ V9
+https://www.mediafire.com/file/06ztdp21v4rewzr/BILLS_DBZ_V9.apk/file
 
-𒆕↯𝐈𝐌𝚯𝐑𝐓∆𝐋⛧𝐗𝐗𝐕ᬏ᭄
-http://www.mediafire.com/file/qfs7exjuwrp6qll/↯𝐈𝐌𝚯𝐑𝐓∆𝐋⛧𝐗𝐗𝐕ᬏ᭄.apk/file
+𒆕⏤͟͟͞͞𝐈𝐌𝚯𝐑𝐓∆𝐋ϟ𝐕𝟚𝟟♞🔥
+http://www.mediafire.com/file/dxurelghjmcwecx/%25E2%258F%25A4%25CD%259F%25CD%259E%25CD%259F%25CD%259E%25F0%259D%2590%2588%25F0%259D%2590%258C%25F0%259D%259A%25AF%25F0%259D%2590%2591%25F0%259D%2590%2593%25E2%2588%2586%25F0%259D%2590%258B%25CF%259F%25F0%259D%2590%2595%25F0%259D%259F%259A%25F0%259D%259F%259F%25E2%2599%259E%25F0%259F%2594%25A5.apk/file
 
-𒆕YGGDRASIL - 𝐓𝐔𝐍𝛯𝛯𝐃
-https://www.mediafire.com/file/47jlw3kpr391j7d/YGGDRASIL_-_%25F0%259D%2590%2593%25F0%259D%2590%2594%25F0%259D%2590%258D%25F0%259D%259B%25AF%25F0%259D%259B%25AF%25F0%259D%2590%2583.apk/file
-
+𒆕ꪶ𝑻𝑰𝑶 𝑷𝑶𝒁𝑬 𝑽4ꫂ
+http://www.mediafire.com/file/68isf6jukot1w27/%EA%AA%B6????????????+????????????????+????4%EA%AB%82.apk/file
 
               🜲𝗜𝗠𝗨𝗡𝗘𝗦 𝗦𝗘𝗖𝗨𝗡𝗗𝗔𝗥𝗜𝗢𝗦🜲
-𒆕⏤͟͟͞͞𝑵𝜟𝛩𝑲𝑰 ⛧ 𝑾𝜟 ⛧ 𝐕7 ⸸
-https://www.mediafire.com/file/ozp19sott8jyc84/%25E2%258F%25A4%25CD%259F%25CD%259E%25CD%259F%25CD%259E%25F0%259D%2591%25B5%25F0%259D%259C%259F%25F0%259D%259B%25A9%25F0%259D%2591%25B2%25F0%259D%2591%25B0_%25E2%259B%25A7_%25F0%259D%2591%25BE%25F0%259D%259C%259F_%25E2%259B%25A7_%25F0%259D%2590%25957_%25E2%25B8%25B8.apk/file
+𒆕𓆲 𝜟͢𝐿𝐶𝐻͢𝜩𝑀𝛪𝑆𝛵 𖧓
+http://www.mediafire.com/file/bv65vukgmg6a1kk/%25F0%2593%2586%25B2%25C2%25A0%25F0%259D%259C%259F%25CD%25A2%25F0%259D%2590%25BF%25F0%259D%2590%25B6%25F0%259D%2590%25BB%25CD%25A2%25F0%259D%259C%25A9%25F0%259D%2591%2580%25F0%259D%259B%25AA%25F0%259D%2591%2586%25F0%259D%259B%25B5%25C2%25A0%25F0%2596%25A7%2593_BY_%25F0%259D%2591%25AA%25F0%259D%2591%25B5%25F0%259D%2591%25B4%25F0%259D%2591%25B6%25F0%259D%2591%25AB%25F0%259D%2591%25BA.apk/file
 
-𒆕𝗦𝗛𝗔𝗥𝗜𝗡𝗚𝗔𝗡 𝗩𝟰
-http://www.mediafire.com/file/dh341g1hjgnj89e/SHARINGAN+V4+V3.apk/file
+𒆕꧁岌玄亇〄 V21꧂
+https://www.mediafire.com/file/jfiarqmyc8gg54j/WA%25EA%25A7%2581%25E5%25B2%258C%25E7%258E%2584%25E4%25BA%2587%25E3%2580%2584_V21%25EA%25A7%2582SEC.apk/file
 
 𒆕• 𝐃𝐄𝐀𝐓𝐇 𝐖𝐀 𝐕𝟓 𝐓𝐔𝐍𝐍𝐄𝐃 •
 https://mega.nz/file/bs0DzQBI#JmUHB4SNmKgkzWZZHjN1Vm3YRTQ-qpLJjuxNaIV0MhQ
