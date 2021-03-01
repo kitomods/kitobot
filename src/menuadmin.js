@@ -5,8 +5,8 @@ const menuadmin = (prefix, pushname) => {
  ◪ COMANDO DOS ADMINS
 ▻${prefix}bemvindo (da as boas vindas)
 ▻${prefix}marcar (marca todos)
- ▻${prefix}d (apaga msg do bot)
- ▻${prefix}leave (bot mete o pé)
+▻${prefix}d (apaga msg do bot)
+▻${prefix}leave (bot mete o pé)
 ▻${prefix}leveling (liga o level)
 ▻${prefix}add 5528999...
 ▻${prefix}promover @
@@ -14,6 +14,7 @@ const menuadmin = (prefix, pushname) => {
 ▻${prefix}abrirgrupo
 ▻${prefix}demote @
 ▻${prefix}kick @
+▻${prefix}ping
 ▻${prefix}level
  `
 
