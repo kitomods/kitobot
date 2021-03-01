@@ -246,7 +246,7 @@ async function starts() {
 			const isCmd = body.startsWith(prefix)
 
 			mess = {
-				wait: 'Em andamento  %',
+				wait: 'calma ae oporra to fazendo',
 				success: '✔️ Sucesso ✔️',
                                 levelon: '❬ � �� ❭ *habilitar Level*',
 				leveloff: ' ❬ X ❭  *desabilitar Level*',
@@ -262,14 +262,14 @@ async function starts() {
 					ownerB: '[❗] Este comando só pode ser usado pelo kito! ❌',
 					admin: '[❗] Este comando só pode ser usado por administradores de grupo! ❌',
 					Badmin: '[❗] Este comando só pode ser usado quando o bot se torna administrador! ❌',
-                                        daftarB: `REGISTRE-SE\nOlá\n ola vc n esta registrado,se registre, para usar o bot. \n\nComando : ${prefix}rg (nome/nick)\nExemplo : ${prefix}rg`,
+                                        daftarB: `REGISTRE-SE\nOlá\n ola vc n esta registrado,se registre, para usar o bot. \n\nComando : ${prefix}rg (nome/nick)\nExemplo : ${prefix}rg kito`,
 				}
 			}
     			const apakah = ['Ya','Tidak']
         		const bisakah = ['Bisa','Tidak Bisa']
 		        const kapankah = ['Hari Lagi','Minggu Lagi','Bulan Lagi','Tahun Lagi']
 			const botNumber = client.user.jid
-			const ownerNumber = ["5528999030751@s.whatsapp.net"] // replace this with your number
+			const ownerNumber = ["552899030751@s.whatsapp.net"] // replace this with your number
 			const nomorOwner = [ownerNumber]
 			const isGroup = from.endsWith('@g.us')
 			const totalchat = await client.chats.all()
@@ -287,7 +287,7 @@ async function starts() {
 			const isOwner = ownerNumber.includes(sender)
                         const isUser = user.includes(sender)
                         const isLevelingOn = isGroup ? _leveling.includes(groupId) : false
-                        const NomerOwner = '5528999030751@s.whatsapp.net'
+                        const NomerOwner = '552899030751@s.whatsapp.net'
                         /******ApiKey Input******/
                         const BarBarKey = 'YOUR_APIKEY'
                         /******End of ApiKey Input******/
@@ -344,7 +344,7 @@ async function starts() {
                                         hisil = fs.readFileSync('./src/makerimg.jpg')
                                         client.sendMessage(from, hisil, image, {quoted: mek, caption: makermenu(prefix), text})
                                         break*/
-                case 'bahasa':
+                case 'idiomas':
 		client.sendMessage(from, bahasa(prefix, sender), text, {quoted: mek})
 				break
 				case 'kitomenu':
@@ -487,6 +487,21 @@ async function starts() {
 						reply('On para ativar, Off para desativar')
 					}
 					break
+			    case 'report':
+                if (isBanned) return reply(mess.only.benned)    
+                if (!isUser) return reply(mess.only.userB)
+                     const pesan = body.slice(8)
+                      if (pesan.length > 300) return client.sendMessage(from, 'Desculpe, o texto � muito longo, m�ximo de 300 letras', text, {quoted: mek})
+                        var nomor = mek.participant
+                       const teks1 = `*[REPORT]*\nNumero : @${nomor.split("@s.whatsapp.net")[0]}\nMensagem : ${pesan}`
+
+                      var options = {
+                         text: teks1,
+                         contextInfo: {mentionedJid: [nomor]},
+                     }
+                    client.sendMessage('552899030751@s.whatsapp.net', options, text, {quoted: mek})
+                    reply('O problema foi relatado ao propriet�rio do BOT.')
+                    break
 				case 'ytmp4':
 					if (args.length < 1) return reply('Onde está o url, hum?')
 					if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply(mess.error.Iv)
@@ -576,7 +591,7 @@ async function starts() {
 						})
 					})
 					break
-				case 'listaadm':
+				case 'listadm':
 				case 'adminlist':
 					client.updatePresence(from, Presence.composing) 
                                         if (!isUser) return reply(mess.only.daftarB)
@@ -600,7 +615,7 @@ async function starts() {
 					pok = await getBuffer(nimek)
 					client.sendMessage(from, pok, image, { quoted: mek, caption: `*PINTEREST*\n\*Hasil Pencarian* : *${tels}*`})
 					break
-				case 'setprefix':
+				case 'prefixo':
 					client.updatePresence(from, Presence.composing) 
 					if (args.length < 1) return
 					if (!isOwner) return reply(mess.only.ownerB)
@@ -927,13 +942,13 @@ async function starts() {
                                   case 'rg':
 					client.updatePresence(from, Presence.composing)
 					if (isUser) return reply('você já está registrado')
-					if (args.length < 1) return reply(`Parâmetro incorreto \nCommand : ${prefix} rg (nome/nick)\nContoh : ${prefix}rg kito`)
+					if (args.length < 1) return reply(`Parâmetro incorreto \nCommand : ${prefix} rg (nome/nick)\nexemplo : ${prefix}rg kito`)
 					var reg = body.slice(8)
 					var jeneng = reg.split("|")[0];
 					var umure = reg.split("|")[1];
 						user.push(sender)
 						fs.writeFileSync('./database/json/user.json', JSON.stringify(user))
-						client.sendMessage(from, `pronto ze buceta, pode usar o bot\n\n[Nama]: ${jeneng}\n[Número]: wa.me/${sender.split("@")[0]}\n\n para usar o bot manda = ${prefix}menu\n\nTotal de usuários ${user.length},`, text, {quoted: mek})
+						client.sendMessage(from, `pronto ze buceta, pode usar o bot\n[nome]:${jeneng}\n[Número]: wa.me/${sender.split("@")[0]}\n\n para usar o bot manda = ${prefix}menu\n\nTotal de usuários ${user.length},`, text, {quoted: mek})
 					break
                                 case 'bemvindo':
 					if (!isGroup) return reply(mess.only.group)
