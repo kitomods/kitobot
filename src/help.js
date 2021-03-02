@@ -16,7 +16,7 @@ const help = (prefix) => {
   ❏${prefix}menuadmin
   ❏${prefix}menulinks (agr ta com imunes novos)
 ◪ 𝗙𝗔𝗭𝗘𝗥
-▻${prefix}report (chama o dono 
+▻${prefix}pinterest 
 ▻${prefix}idiomas (idiomas do comando ${prefix}/tts)
 ▻${prefix}wiki (olha na wikipedia em indonesio)
 ▻${prefix}imagem (transforma fig em imagem)
