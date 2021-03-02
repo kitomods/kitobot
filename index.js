@@ -615,6 +615,16 @@ async function starts() {
 					pok = await getBuffer(nimek)
 					client.sendMessage(from, pok, image, { quoted: mek, caption: `*PINTEREST*\n\*Hasil Pencarian* : *${tels}*`})
 					break
+					case 'pinterest':
+					if (!isGroup) return reply(mess.only.group)
+					reply(mess.wait)
+					client.updatePresence(from, Presence.composing) 
+					data = await fetchJson(`https://api.fdci.se/rep.php?gambar=${body.slice(11)}`, {method: 'get'})
+					n = JSON.parse(JSON.stringify(data));
+					nimek =  n[Math.floor(Math.random() * n.length)];
+					pok = await getBuffer(nimek)
+					client.sendMessage(from, pok, image, { quoted: mek, caption: `* | Resultado da pesquisa!*`})
+					break
 				case 'prefixo':
 					client.updatePresence(from, Presence.composing) 
 					if (args.length < 1) return
